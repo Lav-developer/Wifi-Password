@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wi-Fi Password Viewer</title>
+  <link rel="icon" href="wifi.ico"/>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f7f7f7; }
+    .container { max-width: 600px; margin: 40px auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px #0001; padding: 32px; }
+    h1 { text-align: center; }
+    .demo-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    .demo-table th, .demo-table td { border: 1px solid #ddd; padding: 8px; }
+    .demo-table th { background: #f0f0f0; }
+    .download-btn { display: inline-block; margin: 12px 8px; padding: 12px 24px; background: #0078d4; color: #fff; border-radius: 6px; text-decoration: none; font-weight: bold; }
+    .note { color: #888; font-size: 0.95em; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📶 Wi-Fi Password Viewer</h1>
+    <p>Easily view saved Wi-Fi profiles and their passwords.<br>
+    <span class="note">For educational and personal use only.</span></p>
+    
+    <h2>🔍 Demo</h2>
+    <table class="demo-table">
+      <tr><th>SSID</th><th>Password</th></tr>
+      <tr><td>Home_WiFi</td><td>mypassword123</td></tr>
+      <tr><td>College_WiFi</td><td>collegelife2024</td></tr>
+      <tr><td>Cafe_WiFi</td><td>cafe@1234</td></tr>
+    </table>
+    <div class="note">This is a demo. To view your real Wi-Fi passwords, download and run the app on your device.</div>
+    
+    <h2>⬇️ Download</h2>
+    <a class="download-btn" href="app.py" download>Download Script</a>
+    <!-- <a class="download-btn" href="WiFiPasswordViewer.apk" download>Download for Android (.apk)</a> -->
+    <div class="note">Works only on Windows (admin access required). Android version coming soon.</div>
+    
+    <h2>ℹ️ How It Works</h2>
+    <ul>
+      <li>This tool cannot access your Wi-Fi passwords from the browser for security reasons.</li>
+      <li>Download the script on your Windows PC to view your saved Wi-Fi passwords.</li>
+      <li>Open the script on vs code and in terminal enter <b>pip install subprocess streamlit</b> after completion of library installation enter <b>streamlit run app.py</b> and click "Show Wi-Fi Passwords" to see your profiles.</li>
+    </ul>
+    <hr>
+    <div style="text-align:center; color:gray; font-size:0.9em;">
+      Made with ❤️ for your convenience.<br>
+      <b>Note:</b> This app works only on Windows and requires appropriate permissions.
+    </div>
+  </div>
+</body>
+</html>
